@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SF Genys – Naujienos</title>
+<meta name="description" content="San Francisko lituanistinės mokyklos naujienos – renginiai, pasiekimai ir svarbi informacija." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root { --accent: #006A44; }
+html { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
+.accent { color: var(--accent); }
+.bg-accent { background-color: var(--accent); }
+.ring-accent { --tw-ring-color: var(--accent); }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<!-- Announcement Banner -->
+<div id="banner" class="hidden bg-accent text-white">
+<div class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-4">
+<p class="text-sm sm:text-base font-medium">Registracija 2025–2026 m. jau prasidėjo! Vietų skaičius ribotas.</p>
+<a id="bannerLink" href="#" class="inline-flex items-center rounded-lg bg-white/15 hover:bg-white/25 px-3 py-1.5 text-sm font-semibold">Registruotis</a>
+</div>
+</div>
+
+
+<!-- Header -->
+<header class="bg-white/80 backdrop-blur sticky top-0 z-30 border-b border-gray-200">
+<div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+<a href="#" class="flex items-center gap-3">
+<div class="size-9 rounded-xl bg-accent/10 grid place-items-center">
+<span class="text-xl accent">G</span>
+</div>
+<span class="font-semibold">SF Genys</span>
+</a>
+<nav class="hidden md:flex items-center gap-6 text-sm">
+<a class="hover:text-gray-600" href="#naujienos">Naujienos</a>
+<a class="hover:text-gray-600" href="#kalendorius">Kalendorius</a>
+<a class="hover:text-gray-600" href="#apie">Apie mus</a>
+<a class="hover:text-gray-600" href="#kontaktai">Kontaktai</a>
+</nav>
+<a id="ctaRegistracija" href="#" class="rounded-xl bg-accent text-white px-4 py-2 text-sm font-semibold shadow hover:opacity-90">Registracija</a>
+</div>
+</header>
+
+
+<!-- Hero -->
+<section class="bg-white">
+<div class="mx-auto max-w-6xl px-4 py-12 md:py-16 grid md:grid-cols-2 gap-8 items-center">
+<div>
+<h1 class="text-3xl md:text-4xl font-bold tracking-tight">San Francisko lituanistinės mokyklos <span class="accent">naujienos</span></h1>
+<p class="mt-4 text-gray-600">Renginiai, pasiekimai ir svarbiausia informacija bendruomenei.</p>
+<div class="mt-6 flex flex-wrap gap-3">
+<a id="btnRegistracija" href="#" class="rounded-xl bg-accent text-white px-4 py-2.5 font-semibold shadow hover:opacity-90">Registracija 2025–2026</a>
+<a id="btnKalendorius" href="#kalendorius" class="rounded-xl border border-gray-300 px-4 py-2.5 font-semibold hover:bg-gray-50">Kalendorius</a>
+</div>
+</div>
+<!-- Simple Carousel -->
+<div class="relative rounded-2xl overflow-hidden shadow ring-1 ring-gray-200">
+<div id="carousel" class="relative aspect-[16/9] bg-gray-100"></div>
+<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" id="dots"></div>
+</div>
+</div>
+</section>
+
+
+<!-- Controls -->
+<section class="bg-white border-t border-gray-200">
+<div class="mx-auto max-w-6xl px-4 py-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+<div class="flex gap-3 items-center">
+<label for="search" class="text-sm font-medium">Paieška:</label>
+<input id="search" type="search" placeholder="Raktiniai žodžiai" class="w-72 rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 ring-accent" />
+</div>
+<div class="flex gap-3 items-center">
+<select id="year" class="rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 ring-accent">
+<option value="">Visi metai</option>
+</select>
+<select id="category" class="rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 ring-accent">
+<option value="">Visos kategorijos</option>
+</select>
+<button id="resetFilters" class="rounded-xl px-3 py-2 border text-sm hover:bg-gray-50">Išvalyti</button>
+</div>
+</div>
+</section>
+
+
+<!-- Featured / Svarbiausios -->
+<section class="bg-white">
+<div class="mx-auto max-w-6xl px-4 py-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-xl font-semibold">Svarbiausios</h2>
+</html>
