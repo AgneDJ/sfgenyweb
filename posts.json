@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "title": "Bandomasis įrašas",
+    "date": "2025-09-07",
+    "excerpt": "Tai yra pavyzdinis naujienų įrašas, kad patikrintume dizainą.",
+    "image": "https://picsum.photos/600/400",
+    "categories": ["Testas"],
+    "featured": true,
+    "link": "#"
+  }
+]
